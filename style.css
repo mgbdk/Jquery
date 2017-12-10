@@ -1,0 +1,403 @@
+body{
+    background-color: #f0cfb6;
+}
+.main{
+    width: 1200px;
+    background-color: #FFFFFF;
+    margin: 40px auto 30px auto;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.57);
+    height: 868px;
+}
+.menu{
+    width: 200px;
+    background-color: #f7fafc;
+    border-right: 1px solid rgb(226,235,242);
+    float: left;
+}
+.heading{
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #689fdd;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.btnHeading{
+    border:none;
+    background-color: transparent;
+    color: #689fdd;
+}
+.leftmenu{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.leftmenu h3{
+    color: #9daebf;
+    font-size: 11px;
+    font-family: sans-serif;
+}
+.leftmenu ul{
+    margin: 0px;
+    padding: 0px;
+}
+.leftmenu ul li{
+    list-style-type: none;
+    height: 30;
+    padding-top: 10px;
+}
+.leftmenu ul li a{
+    color: #000000;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.leftmenu ul li a:hover{
+    text-decoration: none;
+}
+.icons{
+    width: 15px;
+    color: #689fdd;
+    margin-right: 20px;
+}
+.bottom{
+    padding-left: 20px;
+    padding-top: 200px;
+    padding-bottom: 15px;
+}
+.bottom h3{
+float: left;
+font-family: sans-serif;
+font-size: 14px;
+padding: 0px;
+margin: 0px;
+padding-right: 20px;
+color: #9daebf;
+}
+.content{
+    float: left;
+    background-color: #FFFFFF;
+}
+.top{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(226,235,242);
+}
+.topHeading{
+    width: 80px;
+    height: 25px;
+    float: left;
+}
+.topHeading h3{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(63, 63, 63);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+.topButtons{
+    float: left;
+}
+.btnTopLeft{
+    width: 100px;
+    padding-top: 3px;
+    float: left;
+}
+.btnUpload{
+   color: rgb(57,210,46);
+   font-family: sans-serif;
+   font-size: 15px;
+   background-color: transparent;
+   border: none;
+}
+.iconUpload{
+    margin-right: 7px;
+}
+.btnTopRight{
+    width: 500px;
+    padding-top: 5px;
+    text-align: right;
+    float: left;
+}
+.btnTopRight button{
+    border:none;
+    background-color: transparent;
+    color: #689fdd;
+    margin-right: 10px;
+}
+.divSearch{
+    margin-left: 5px;
+    padding-left: 20px;
+    float: left;
+    padding-top: 2px;
+    border-left: 1px solid rgb(226,235,242);
+}
+.divSearch i{
+    color: #689fdd;
+    margin-right: 10px;
+}
+.txtSearch{
+    border:none;
+    background-color: transparent;
+    color:rgb(124,138,152);
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.subMenu{
+    width: 150px;
+    height: 807px;
+    border-right: 1px solid rgb(226,235,242);
+    float: left;
+}
+.subContent{
+    float: left;
+}
+.files{
+    width: 843px;
+    height: 80px;
+    border-bottom: 1px solid rgb(226,235,242);
+    padding-left: 5px;
+
+}
+.filesLeft{
+    float: left;
+}
+.filesLeft input[type='radio']{
+    margin:30px 10px 30px 15px;
+}
+.filesLeft i{
+    width: 25px;
+    color: #689fdd;
+    margin:30px 10px 30px 10px;
+}
+.filesMiddle{
+    float: left;
+    padding:17px 10px 20px 10px;
+}
+.filesMiddle h3{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #689fdd;
+    font-weight: normal;
+    padding-bottom: 3px;
+}
+.filesMiddle font{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color:rgb(124,138,152);
+}
+.subLeftmenu{
+    padding-top: 10px;
+}
+.subLeftmenu h3{
+    color: #9daebf;
+    font-size: 11px;
+    font-family: sans-serif;
+    padding-left: 20px;
+}
+.subLeftmenu ul{
+    margin: 0px;
+    padding: 0px;
+}
+.subLink{
+    list-style-type: none;
+    height: 30;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.subLink a{
+    color: #000000;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.subLink a:hover{
+    text-decoration: none;
+}
+.createLink{
+    list-style-type: none;
+    height: 30;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.createLink a{
+    color: #4f90d3;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.createLink a:hover{
+    text-decoration: none;
+}
+.filesEdit{
+    float: right;
+    padding: 27px 10px 20px 0;
+}
+.filesEdit i{
+    margin-right: 20px;
+    color: #689fdd;
+}
+.filesEdit .dangerIcon{
+    color: rgb(236,68,68);
+}
+.popUpWindow{
+    width: 293px;
+    height: 868px;
+    position: absolute;
+    top: 40px;
+    right: 55px;
+    background-color: #FFFFFF;
+    border-left: 2px solid rgb(226,235,242);
+}
+.windowHeader{
+    height: 61px;
+}
+.popUpTop{
+    float: left;
+}
+.popUpTop i{
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #689fdd;
+}
+.popUpTop h3{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #9daebf;
+    float: right;
+    font-weight: normal;
+    margin-top: 24px;
+}
+.windowImage{
+    width: 293px;
+    height: 354px;
+}
+.windowFooter{
+    padding-left: 20px;
+}
+.footerContent h3{
+    color: #9daebf;
+    font-size: 11px;
+    font-family: sans-serif;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.footerContent img{
+    width: 30px;
+    height: 30px;
+    background-color: #788795;
+    border-radius: 50%;
+}
+.footerContent font{
+    color: rgb(73,140,212);
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-left: 20px;
+    position: relative;
+    top: -10px;
+    font-weight: bold;
+}
+.footerContent i{
+    color: rgb(73,140,212);
+}
+.footerContent a{
+    color: rgb(73,140,212);
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-left: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footerContent .iconDetail{
+    width: 20px;
+    color: #9daebf;
+    margin-bottom: 10px;
+}
+.footerContent .fileDate{
+    color: #9daebf;
+    font-size: 13px;
+    font-family: sans-serif;
+    position: relative;
+    top: 0px;
+}
+.footerContent .fileType{
+    color: #9daebf;
+    font-size: 13px;
+    font-family: sans-serif;
+    position: relative;
+    top: 0px;
+}
+.checkedFiles{    
+    width: 410px;
+    top: -19px;
+    position: relative;
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    right: -489px;
+}
+.checkedFiles i{
+    margin-right: 10px;
+    color: #689fdd;
+}
+.checkedFiles font{
+    color: rgb(124,138,152);
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.checkedFiles .dangerFont{
+    color: rgb(236,68,68);
+}
+.checkedFiles .dangerIcon{
+     color: rgb(236,68,68);
+}
+.imagePopUp{
+    width: 1000px;
+    background-color: #FFFFFF;
+    margin: 40px auto 30px auto;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.57);
+}
+.imgPopUpHead{
+    padding-left: 20px;
+    width: 980px;
+    height: 50px;
+    border-bottom: 1px solid rgb(226,235,242);
+}
+.imgPopUpHead h3{
+    color: #9daebf;
+    font-size: 15px;
+    font-family: sans-serif;
+    float: left;
+}
+.imgPopUpHead div{
+    float: right;
+}
+.imgPopUpHead div i{
+    width: 25px;
+    color: #689fdd;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+.imgPopUpHead div .dangerIcon{
+    color: rgb(236,68,68);
+}
+.imgPopUpHead div font{
+    color: rgb(124,138,152);
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.imgPopUpContent{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.imgPopUpContent img{
+    width: 512px;
+    height: 510px;
+    margin-left: 24%;
+}

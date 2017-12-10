@@ -1,0 +1,192 @@
+<html>
+<head><title>3drops</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+    function funcLoad(){
+        $(".files .filesEdit").hide();
+        $(".popUpWindow").hide();
+        $(".checkedFiles").hide();
+        $(".imagePopUp").hide();
+    }
+    $("document").ready(function(){
+        $(".files").mouseenter(function(){
+            $(this).css("padding-left","2px");
+            $(this).css("border-left","3px solid #4f90d3");   
+            $(this).find(".filesEdit").show();
+        });
+        $(".files").mouseleave(function(){
+            $(this).css("border-left","none");
+            $(this).css("padding-left", "5px");
+            $(this).find(".filesEdit").hide();
+        });
+        $(".subLink").mouseenter(function(){
+            $(this).css("padding-left","18px");
+            $(this).css("border-left","2px solid #4f90d3");
+        });
+         $(".subLink").mouseleave(function(){
+            $(this).css("border-left","none");
+            $(this).css("padding-left", "20px");
+        });
+       $("#linkAll").click(function(){
+            $(this).css("padding-left","18px");
+            $(this).css("border-left","2px solid #4f90d3");
+            $("#image").show();
+            $("#video").show();
+            $("#document").show();
+            $(".popUpWindow").hide();
+        });
+        $("#linkImages").click(function(){
+            $("#linkImages").css("padding-left","18px");
+            $("#linkImages").css("border-left","2px solid #4f90d3");
+            $("#image").show();
+            $("#video").hide();
+            $("#document").hide();
+            $(".popUpWindow").hide();
+        });
+        $("#linkVideos").click(function(){
+            $(this).css("padding-left","18px");
+            $(this).css("border-left","2px solid #4f90d3");
+            $("#image").hide();
+            $("#video").show();
+            $("#document").hide();
+            $(".popUpWindow").hide();
+        });
+        $("#linkDocuments").click(function(){
+            $(this).css("padding-left","18px");
+            $(this).css("border-left","2px solid #4f90d3");
+            $("#image").hide();
+            $("#video").hide();
+            $("#document").show();
+            $(".popUpWindow").hide();
+        });
+        $("#image .filesMiddle").click(function(){
+            $(".popUpWindow").show();
+            $("#fileTypeAndIcon").html("<i class='fa fa-picture-o iconDetail'></i><font class='fileType'>Image</font>");
+        });
+        $("#document .filesMiddle").click(function(){
+            $(".popUpWindow").show();
+            $("#fileTypeAndIcon").html("<i class='fa fa-file-text-o iconDetail'></i><font class='fileType'>Document</font>");
+        });
+        $("#video .filesMiddle").click(function(){
+            $(".popUpWindow").show();
+            $("#fileTypeAndIcon").html("<i class='fa fa-file-video-o iconDetail'></i><font class='fileType'>Video</font>");
+        });
+        $("#hide").click(function(){
+            $(".popUpWindow").hide();
+        });
+        $('input:radio[name="filesradio"]').change(function(){
+            $(".checkedFiles").show();
+            $(".files .filesEdit").hide();
+        });
+        $(".windowImage").click(function(){
+            $(".main").hide();
+            $(".imagePopUp").show();
+        });
+        $(".imagePopUp #closeIcon").click(function(){
+            $(".imagePopUp").hide();
+            $(".main").show();
+        });
+    });
+</script>
+</head>
+<body onload="funcLoad()">
+<div class="main">
+<div class="menu">
+    <h2 class="heading">3drops<button class="btnHeading"><i class="fa fa-chevron-down"></i></button></h2>
+    <div class="leftmenu">
+        <h3>GENERAL</h3>
+        <ul>
+            <li><i class="fa fa-wpforms icons"></i><a href="#">Dashboard</a></li>
+            <li><i class="fa fa-list icons"></i><a href="#">Quotes</a></li>
+            <li><i class="fa fa-file-text-o icons"></i><a href="#">Content</a></li>
+            <li><i class="fa fa-address-book-o icons"></i><a href="#">Contacts</a></li>
+            <li><i class="fa fa-th-large icons"></i><a href="#">Library</a></li>
+        </ul>
+    </div>
+    <div class="leftmenu">
+        <h3>ACTIVITY</h3>
+        <ul>
+            <li><i class="fa fa-bell-o icons"></i><a href="#">Notifications</a></li>
+            <li><i class="fa fa-clock-o icons"></i><a href="#">Events</a></li>
+        </ul>
+    </div>
+    <div class="leftmenu">
+        <h3>SETTINGS</h3>
+        <ul>
+            <li><i class="fa fa-user-circle-o icons"></i><a href="#">Account</a></li>
+            <li><i class="fa fa-toggle-on icons"></i><a href="#">Integration</a></li>
+            <li><i class="fa fa-square-o icons"></i><a href="#">Notification</a></li>
+            <li><i class="fa fa-money icons"></i><a href="#">Billing</a></li>
+        </ul>
+    </div>
+    <div class="bottom"><h3>QUOTEBOX</h3><i class="fa fa-life-ring icons"></i><i class="fa fa-power-off icons"></i></div>
+</div>
+<div class="content">
+<div class="top">
+    <div class="topHeading"><h3>Library</h3></div>
+    <div class="topButtons">
+    <div class="btnTopLeft"><button class="btnUpload"><i class="fa fa-plus-circle iconUpload" aria-hidden="true"></i>Upload</button></div>
+    <div class="btnTopRight"><button><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button><button><i class="fa fa-sign-in fa-rotate-90 fa-lg" aria-hidden="true"></i></button></div>
+    <div class="divSearch"><i class="fa fa-search" aria-hidden="true"></i><input type="text" class="txtSearch" value="Search"></div>
+    <div class="checkedFiles">
+        <i class="fa fa-link fa-rotate-90 fa-lg"></i><font>Share</font>
+        <i class="fa fa-sign-in fa-rotate-90 fa-lg" aria-hidden="true"></i><font>Download</font>
+        <i class="fa fa-archive fa-lg"></i><font>Archive</font>
+        <i class="fa fa-trash-o dangerIcon fa-lg"></i><font class="dangerFont">Delete</font>
+    </div>
+    </div>
+</div>
+<div class="subMenu">
+    <div class="subLeftmenu">
+        <h3>TYPES</h3>
+        <ul>
+            <li id="linkAll" class="subLink"><a href="#">All</a></li>
+            <li id="linkImages" class="subLink"><a href="#">Images</a></li>
+            <li id="linkVideos" class="subLink"><a href="#">Videos</a></li>
+            <li id="linkDocuments" class="subLink"><a href="#">Documents</a></li>
+            <li class="createLink"><a href="#">Create a new tag</a></li>
+        </ul>
+    </div>
+</div>
+<div class="subContent">
+    <div id="document" class="files">
+        <div class="filesLeft"><input type="radio" id="rdDocument" name="filesradio">
+        <i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="filesMiddle"><h3>Documents</h3><font>SIZE</font></div>
+        <div class="filesEdit"><i class="fa fa-external-link" aria-hidden="true"></i><i class="fa fa-archive" aria-hidden="true"></i><i class="fa fa-trash-o dangerIcon" aria-hidden="true"></i></div>
+    </div>
+    <div id="image" class="files">
+        <div class="filesLeft"><input type="radio" id="rdImage" name="filesradio"><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></div>
+        <div class="filesMiddle"><h3>Image</h3><font>SIZE</font></div>
+        <div class="filesEdit"><i class="fa fa-external-link" aria-hidden="true"></i><i class="fa fa-archive" aria-hidden="true"></i><i class="fa fa-trash-o dangerIcon" aria-hidden="true"></i></div>
+    </div>
+    <div id="video" class="files">
+        <div class="filesLeft"><input type="radio" id="rdVideo" name="filesradio"><i class="fa fa-file-video-o fa-lg" aria-hidden="true"></i></div>
+        <div class="filesMiddle"><h3>Video</h3><font>SIZE</font></div>
+        <div class="filesEdit"><i class="fa fa-external-link" aria-hidden="true"></i><i class="fa fa-archive" aria-hidden="true"></i><i class="fa fa-trash-o dangerIcon" aria-hidden="true"></i></div>
+    </div>
+</div>
+<div class="popUpWindow">
+    <div class="windowHeader"><div class="popUpTop"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i><h3 id="hide">Hide</h3></div><div class="filesEdit"><i class="fa fa-external-link" aria-hidden="true"></i><i class="fa fa-archive" aria-hidden="true"></i><i class="fa fa-trash-o dangerIcon" aria-hidden="true"></i></div></div>
+    <div class="windowImage"><img class="popUpimg" src="img/image.png"/></div>
+    <div class="windowFooter">
+        <div class="footerContent"><h3>UPLOADED BY</h3><img class="imgProfile" /><font>Farzad Ban</font></div>
+        <div class="footerContent"><h3>SHARE</h3><i class="fa fa-link fa-rotate-90 fa-lg" aria-hidden="true"></i><a href="http://qtpp.co/136473">http://qtpp.co/136473</a></div>
+        <div class="footerContent">
+            <h3>DETAILS</h3>
+            <i class="fa fa-clock-o fa-lg iconDetail" aria-hidden="true"></i><font class="fileDate">21 April 2014</font><br>
+            <div id="fileTypeAndIcon"></div>
+            <i class="fa fa-sign-in fa-rotate-90 fa-lg" aria-hidden="true"></i><a href="#">Download</a>
+        </div>
+                  
+    </div>
+</div>
+</div>
+</div>
+<div class="imagePopUp"><div class="imgPopUpHead"><h3>QUOTEBOX</h3><div><i class="fa fa-link fa-rotate-90 fa-lg"></i><font>Share</font><i class="fa fa-sign-in fa-rotate-90 fa-lg"></i><font>Download</font><i id="closeIcon" class="fa fa-times dangerIcon"></i></div></div><div class="imgPopUpContent"><img src="img/imageBigger.png" /></div></div>
+</body>
+</html>
